@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedNet AI - Demo Chatbot</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <svg class="loading-spinner" viewBox="0 0 50 50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg>
+    </div>
+
+    <header class="futuristic-header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="MedNet AI Logo" class="logo">
+                <span class="company-name">MedNet AI</span>
+            </div>
+            <nav class="futuristic-nav">
+                <ul>
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="webdev.html">Web Development</a></li>
+                    <li><a href="demo.html" class="active">Demo Chatbot</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="demo-hero">
+            <div class="particles-background" id="particles-js-demo"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="typing-animation">Demo Chatbot Medical</h1>
+                    <p class="fade-in">Experimentează puterea asistentului nostru virtual pentru clinici</p>
+                    <button id="openChatbot" class="cta-button pulse">
+                        <svg viewBox="0 0 24 24" class="robot-icon">
+                            <path fill="currentColor" d="M12,2A2,2 0 0,1 14,4C14,4.74 13.6,5.39 13,5.73V7H14A7,7 0 0,1 21,14H22A1,1 0 0,1 23,15V18A1,1 0 0,1 22,19H21V20A2,2 0 0,1 19,22H5A2,2 0 0,1 3,20V19H2A1,1 0 0,1 1,18V15A1,1 0 0,1 2,14H3A7,7 0 0,1 10,7H11V5.73C10.4,5.39 10,4.74 10,4A2,2 0 0,1 12,2M7.5,13A2.5,2.5 0 0,0 5,15.5A2.5,2.5 0 0,0 7.5,18A2.5,2.5 0 0,0 10,15.5A2.5,2.5 0 0,0 7.5,13M16.5,13A2.5,2.5 0 0,0 14,15.5A2.5,2.5 0 0,0 16.5,18A2.5,2.5 0 0,0 19,15.5A2.5,2.5 0 0,0 16.5,13Z"/>
+                        </svg>
+                        Deschide Chatbot
+                    </button>
+                </div>
+                <div class="hero-image">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" class="float-animation">
+                        <!-- Chatbot SVG -->
+                        <circle cx="250" cy="250" r="200" fill="#4e54c8" opacity="0.1" stroke="#4e54c8" stroke-width="2"/>
+                        <circle cx="250" cy="200" r="100" fill="#fff" stroke="#4e54c8" stroke-width="2"/>
+                        <circle cx="220" cy="180" r="15" fill="#4e54c8"/>
+                        <circle cx="280" cy="180" r="15" fill="#4e54c8"/>
+                        <path d="M220,230 Q250,250 280,230" fill="none" stroke="#4e54c8" stroke-width="5" stroke-linecap="round"/>
+                        <rect x="150" y="300" width="200" height="50" rx="10" fill="#fff" stroke="#4e54c8" stroke-width="2"/>
+                        <rect x="170" y="320" width="40" height="10" fill="#8f94fb"/>
+                        <rect x="230" y="320" width="40" height="10" fill="#8f94fb"/>
+                        <rect x="290" y="320" width="40" height="10" fill="#8f94fb"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-features">
+            <div class="container">
+                <h2 class="section-title">Funcționalități Chatbot Medical</h2>
+                <div class="features-grid">
+                    <div class="feature-card hover-grow">
+                        <div class="icon-container">
+                            <svg viewBox="0 0 24 24" class="icon">
+                                <path fill="currentColor" d="M12,3L2,12H5V20H19V12H22L12,3M12,7.7C14.1,7.7 15.8,9.4 15.8,11.5C15.8,14.5 12,18 12,18C12,18 8.2,14.5 8.2,11.5C8.2,9.4 9.9,7.7 12,7.7Z"/>
+                            </svg>
+                        </div>
+                        <h3>Informații Clinică</h3>
+                        <p>Răspunde automat la întrebări despre locație, program și servicii.</p>
+                    </div>
+                    
+                    <div class="feature-card hover-grow">
+                        <div class="icon-container">
+                            <svg viewBox="0 0 24 24" class="icon">
+                                <path fill="currentColor" d="M19,19H5V5H19M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M7,7H17V17H7V7Z"/>
+                            </svg>
+                        </div>
+                        <h3>Programări</h3>
+                        <p>Ghidează pacienții prin procesul de programare la consultații.</p>
+                    </div>
+                    
+                    <div class="feature-card hover-grow">
+                        <div class="icon-container">
+                            <svg viewBox="0 0 24 24" class="icon">
+                                <path fill="currentColor" d="M12,3L2,12H5V20H19V12H22L12,3M12,8A3,3 0 0,1 15,11A3,3 0 0,1 12,14A3,3 0 0,1 9,11A3,3 0 0,1 12,8Z"/>
+                            </svg>
+                        </div>
+                        <h3>Specialități</h3>
+                        <p>Prezintă informații despre specialitățile medicale disponibile.</p>
+                    </div>
+                    
+                    <div class="feature-card hover-grow">
+                        <div class="icon-container">
+                            <svg viewBox="0 0 24 24" class="icon">
+                                <path fill="currentColor" d="M19,3H14.82C14.4,1.84 13.3,1 12,1C10.7,1 9.6,1.84 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M13,12H16L12,16L8,12H11V8H13V12Z"/>
+                            </svg>
+                        </div>
+                        <h3>Medici</h3>
+                        <p>Oferă detalii despre medicii clinicii și programul lor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-cta">
+            <div class="container">
+                <div class="cta-card">
+                    <h2>Gata să implementezi chatbot-ul în clinica ta?</h2>
+                    <p>Contactează-ne pentru o demonstrație personalizată și ofertă adaptată nevoilor tale.</p>
+                    <a href="contact.html" class="cta-button pulse">Contactează-ne</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chatbot Container -->
+    <div id="chatbotContainer" class="chatbot-container">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <img src="assets/logo.png" alt="MedNet AI Logo" class="chatbot-logo">
+                <span>Asistent Virtual MedNet</span>
+                <div class="online-dot"></div>
+            </div>
+            <div class="chatbot-actions">
+                <button id="backButton" class="chatbot-action-btn" title="Înapoi">
+                    <svg viewBox="0 0 24 24" class="action-icon">
+                        <path fill="currentColor" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"/>
+                    </svg>
+                </button>
+                <button id="clearButton" class="chatbot-action-btn" title="Șterge conversație">
+                    <svg viewBox="0 0 24 24" class="action-icon">
+                        <path fill="currentColor" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"/>
+                    </svg>
+                </button>
+                <button id="minimizeButton" class="chatbot-action-btn" title="Minimizează">
+                    <svg viewBox="0 0 24 24" class="action-icon">
+                        <path fill="currentColor" d="M19,13H5V11H19V13Z"/>
+                    </svg>
+                </button>
+                <button id="closeButton" class="chatbot-action-btn" title="Închide">
+                    <svg viewBox="0 0 24 24" class="action-icon">
+                        <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="chatbotMessages" class="chatbot-messages">
+            <!-- Messages will be inserted here by JavaScript -->
+        </div>
+        <div class="chatbot-options">
+            <!-- Options will be inserted here by JavaScript -->
+        </div>
+    </div>
+
+    <footer class="futuristic-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/logo.png" alt="MedNet AI Logo" class="footer-logo">
+                    <p>Solutii avansate de AI și web development pentru clinici medicale.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Link-uri Rapide</h4>
+                    <ul>
+                        <li><a href="index.html">Acasă</a></li>
+                        <li><a href="webdev.html">Web Development</a></li>
+                        <li><a href="demo.html">Demo Chatbot</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><svg viewBox="0 0 24 24" class="footer-icon"><path fill="currentColor" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/></svg> Strada AI nr. 10, Oradea</li>
+                        <li><svg viewBox="0 0 24 24" class="footer-icon"><path fill="currentColor" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/></svg> +40 721 123 456</li>
+                        <li><svg viewBox="0 0 24 24" class="footer-icon"><path fill="currentColor" d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"/></svg> contact@mednetai.ro</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MedNet AI. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>

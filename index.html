@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedNet AI - Soluții AI pentru Clinici Medicale</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <header class="futuristic-header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="MedNet AI Logo" class="logo">
+                <span class="company-name">MedNet AI</span>
+            </div>
+            <nav class="futuristic-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Acasă</a></li>
+                    <li><a href="webdev.html">Web Development</a></li>
+                    <li><a href="demo.html">Demo Chatbot</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="particles-background" id="particles-js"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="typing-animation">Transformă-ți clinica total</h1>
+                    <p class="fade-in">Soluții avansate de chatbot AI personalizate pentru clinici medicale</p>
+                    <div class="cta-buttons">
+                        <a href="demo.html" class="cta-button pulse">Testează Demo</a>
+                        <a href="contact.html" class="cta-button secondary">Contactează-ne</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" class="float-animation">
+                        <!-- Robot SVG -->
+                        <circle cx="250" cy="150" r="80" fill="#4e54c8" opacity="0.1"/>
+                        <circle cx="250" cy="150" r="70" fill="#4e54c8"/>
+                        <circle cx="230" cy="130" r="10" fill="#fff"/>
+                        <circle cx="270" cy="130" r="10" fill="#fff"/>
+                        <path d="M230,170 Q250,190 270,170" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+                        <rect x="200" y="200" width="100" height="150" rx="20" fill="#4e54c8"/>
+                        <rect x="220" y="220" width="60" height="100" fill="#8f94fb" rx="10"/>
+                        <rect x="180" y="350" width="140" height="20" rx="10" fill="#4e54c8"/>
+                        <rect x="190" y="370" width="40" height="30" rx="5" fill="#6a3093"/>
+                        <rect x="270" y="370" width="40" height="30" rx="5" fill="#6a3093"/>
+                        <path d="M150,200 L200,220 M150,230 L200,240 M150,260 L200,250" stroke="#4e54c8" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M350,200 L300,220 M350,230 L300,240 M350,260 L300,250" stroke="#4e54c8" stroke-width="8" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <div class="container">
+                <h2 class="section-title slide-in">De ce să alegi MedNet AI?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card hover-grow">
+                        <div class="icon-container">
+                            <svg viewBox="0 0 24 24" class="icon">
+                                <path fill="currentColor" d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,7H13V11H17V13H13V17H11V13H7V11H11V7Z"/>
+                            </svg>
+                        </div>
+                        <h3>Disponibilitate 24/7</h3>
+                        <p>Răspunsuri instant la orice oră, fără întârzieri.</p>
+                    </div>
+                    
+                    <div class="benefit-card hover-grow">
+                        <div class="icon-container">
+                            <svg viewBox="0 0 24 24" class="icon">
+                                <path fill="currentColor" d="M12,3L2,12H5V20H19V12H22L12,3M12,7.7C14.1,7.7 15.8,9.4 15.8,11.5C15.8,14.5 12,18 12,18C12,18 8.2,14.5 8.2,11.5C8.2,9.4 9.9,7.7 12,7.7Z"/>
+                            </svg>
+                        </div>
+                        <h3>Reducere Costuri</h3>
+                        <p>Automatizarea întrebărilor frecvente reduce nevoia de personal suplimentar.</p>
+                    </div>
+                    
+                    <div class="benefit-card hover-grow">
+                        <div class="icon-container">
+                            <svg viewBox="0 0 24 24" class="icon">
+                                <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                            </svg>
+                        </div>
+                        <h3>Eficiență Crescută</h3>
+                        <p>Personalul medical se poate concentra pe sarcini critice.</p>
+                    </div>
+                    
+                    <div class="benefit-card hover-grow">
+                        <div class="icon-container">
+                            <svg viewBox="0 0 24 24" class="icon">
+                                <path fill="currentColor" d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M11,7H13V9H11V7M11,11H13V17H11V11Z"/>
+                            </svg>
+                        </div>
+                        <h3>Experiență Pacient</h3>
+                        <p>Interacțiune rapidă și personalizată pentru fiecare pacient.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item count-up" data-target="85">
+                        <svg viewBox="0 0 24 24" class="stat-icon">
+                            <path fill="currentColor" d="M13,2.05V5.08C16.39,5.57 19,8.47 19,12C19,12.9 18.82,13.75 18.5,14.54L21.12,16.07C21.68,14.83 22,13.45 22,12C22,6.82 18.05,2.55 13,2.05M12,19A7,7 0 0,1 5,12C5,8.47 7.61,5.57 11,5.08V2.05C5.94,2.55 2,6.81 2,12A10,10 0 0,0 12,22C15.3,22 18.23,20.39 20.05,17.91L17.45,16.38C16.17,18 14.21,19 12,19Z"/>
+                        </svg>
+                        <span class="stat-number">0</span>%
+                        <p>Reducere timp de răspuns</p>
+                    </div>
+                    <div class="stat-item count-up" data-target="300">
+                        <svg viewBox="0 0 24 24" class="stat-icon">
+                            <path fill="currentColor" d="M21,6V8H3V6H21M3,18H12V16H3V18M3,13H21V11H3V13Z"/>
+                        </svg>
+                        <span class="stat-number">0</span>+
+                        <p>Întrebări gestionate zilnic</p>
+                    </div>
+                    <div class="stat-item count-up" data-target="24">
+                        <svg viewBox="0 0 24 24" class="stat-icon">
+                            <path fill="currentColor" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M16.2,16.2L11,13V7H12.5V12.2L17,14.9L16.2,16.2Z"/>
+                        </svg>
+                        <span class="stat-number">0</span>/7
+                        <p>Disponibilitate non-stop</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="workflow-section">
+            <div class="container">
+                <h2 class="section-title">Cum Funcționează</h2>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <div class="step-number">1</div>
+                        <svg viewBox="0 0 24 24" class="step-icon">
+                            <path fill="currentColor" d="M12,3L2,12H5V20H19V12H22L12,3M12,7.7C14.1,7.7 15.8,9.4 15.8,11.5C15.8,14.5 12,18 12,18C12,18 8.2,14.5 8.2,11.5C8.2,9.4 9.9,7.7 12,7.7Z"/>
+                        </svg>
+                        <h3>Analiză Nevoi</h3>
+                        <p>Identificăm cerințele specifice clinicii dumneavoastră</p>
+                    </div>
+                    <div class="workflow-arrow">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/>
+                        </svg>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">2</div>
+                        <svg viewBox="0 0 24 24" class="step-icon">
+                            <path fill="currentColor" d="M12,18A6,6 0 0,1 6,12C6,11 6.25,10.03 6.7,9.2L5.24,7.74C4.46,8.97 4,10.43 4,12A8,8 0 0,0 12,20V23L16,19L12,15M12,4V1L8,5L12,9V6A6,6 0 0,1 18,12C18,13 17.75,13.97 17.3,14.8L18.76,16.26C19.54,15.03 20,13.57 20,12A8,8 0 0,0 12,4Z"/>
+                        </svg>
+                        <h3>Configurare</h3>
+                        <p>Personalizăm chatbot-ul conform specificațiilor</p>
+                    </div>
+                    <div class="workflow-arrow">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/>
+                        </svg>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">3</div>
+                        <svg viewBox="0 0 24 24" class="step-icon">
+                            <path fill="currentColor" d="M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L5,8.09V15.91L12,19.85L19,15.91V8.09L12,4.15Z"/>
+                        </svg>
+                        <h3>Implementare</h3>
+                        <p>Integrare perfectă în sistemul existent</p>
+                    </div>
+                    <div class="workflow-arrow">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/>
+                        </svg>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">4</div>
+                        <svg viewBox="0 0 24 24" class="step-icon">
+                            <path fill="currentColor" d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M11,16.5L18,9.5L16.59,8.09L11,13.68L7.91,10.59L6.5,12L11,16.5Z"/>
+                        </svg>
+                        <h3>Operare</h3>
+                        <p>Asistență continuă și actualizări</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-card">
+                    <h2>Gata să digitalizezi clinica ta?</h2>
+                    <p>Contactează-ne pentru o soluție personalizată care îți va transforma modul de comunicare cu pacienții.</p>
+                    <a href="contact.html" class="cta-button pulse">Contactează-ne</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="futuristic-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo-container">
+                        <img src="assets/logo.png" alt="MedNet AI Logo" class="footer-logo">
+                    </div>
+                    <p>Solutii avansate de AI pentru eficientizarea clinicilor medicale.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Link-uri Rapide</h4>
+                    <ul>
+                        <li><a href="index.html">Acasă</a></li>
+                        <li><a href="webdev.html">Web Development</a></li>
+                        <li><a href="demo.html">Demo Chatbot</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><svg viewBox="0 0 24 24" class="footer-icon"><path fill="currentColor" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/></svg> Strada AI nr. 10, Oradea</li>
+                        <li><svg viewBox="0 0 24 24" class="footer-icon"><path fill="currentColor" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/></svg> +40 721 123 456</li>
+                        <li><svg viewBox="0 0 24 24" class="footer-icon"><path fill="currentColor" d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"/></svg> contact@mednetai.ro</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MedNet AI. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

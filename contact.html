@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedNet AI - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <svg class="loading-spinner" viewBox="0 0 50 50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg>
+    </div>
+
+    <header class="futuristic-header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="MedNet AI Logo" class="logo">
+                <span class="company-name">MedNet AI</span>
+            </div>
+            <nav class="futuristic-nav">
+                <ul>
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="webdev.html">Web Development</a></li>
+                    <li><a href="demo.html">Demo Chatbot</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="particles-background" id="particles-js-contact"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="typing-animation">Contactează-ne acum!</h1>
+                    <p class="fade-in">Ai întrebări sau ai nevoie de o soluție personalizată? Suntem aici să te ajutăm.</p>
+                </div>
+                <div class="hero-image">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" class="float-animation">
+                        <!-- Contact SVG -->
+                        <rect x="100" y="100" width="300" height="300" rx="20" fill="#4e54c8" opacity="0.1" stroke="#4e54c8" stroke-width="2"/>
+                        <path d="M150,150 L350,150 L350,350 L150,350 Z" fill="white" stroke="#4e54c8" stroke-width="2"/>
+                        <circle cx="250" cy="200" r="30" fill="#8f94fb"/>
+                        <rect x="200" y="250" width="100" height="10" fill="#8f94fb"/>
+                        <rect x="180" y="270" width="140" height="10" fill="#8f94fb"/>
+                        <rect x="220" y="290" width="60" height="10" fill="#8f94fb"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <h2 class="section-title">Trimite-ne un mesaj</h2>
+                        <form id="contactForm" class="futuristic-form">
+                            <div class="form-group">
+                                <label for="name">Nume complet</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Adresă de email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Număr de telefon</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subiect</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Alegeți subiectul</option>
+                                    <option value="webdev">Web Development</option>
+                                    <option value="chatbot">Chatbot Medical</option>
+                                    <option value="support">Suport Tehnic</option>
+                                    <option value="other">Altceva</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mesaj</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="cta-button">Trimite Mesaj</button>
+                        </form>
+                        <div id="successMessage" class="success-message">
+                            <svg viewBox="0 0 24 24" class="success-icon">
+                                <path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"/>
+                            </svg>
+                            <h3>Mesaj trimis cu succes!</h3>
+                            <p>Vei fi contactat în cel mai scurt timp posibil.</p>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <h2 class="section-title">Date de contact</h2>
+                        <div class="info-card hover-grow">
+                            <div class="info-icon-container">
+                                <svg viewBox="0 0 24 24" class="info-icon">
+                                    <path fill="currentColor" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h3>Adresă</h3>
+                                <p>Strada AI nr. 10, Oradea, Romania</p>
+                            </div>
+                        </div>
+                        <div class="info-card hover-grow">
+                            <div class="info-icon-container">
+                                <svg viewBox="0 0 24 24" class="info-icon">
+                                    <path fill="currentColor" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h3>Telefon</h3>
+                                <p>+40 721 123 456</p>
+                            </div>
+                        </div>
+                        <div class="info-card hover-grow">
+                            <div class="info-icon-container">
+                                <svg viewBox="0 0 24 24" class="info-icon">
+                                    <path fill="currentColor" d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h3>Email</h3>
+                                <p>contact@mednetai.ro</p>
+                            </div>
+                        </div>
+                        <div class="info-card hover-grow">
+                            <div class="info-icon-container">
+                                <svg viewBox="0 0 24 24" class="info-icon">
+                                    <path fill="currentColor" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,7.5A4.5,4.5 0 0,1 16.5,12A4.5,4.5 0 0,1 12,16.5A4.5,4.5 0 0,1 7.5,12A4.5,4.5 0 0,1 12,7.5M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10Z"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h3>Program</h3>
+                                <p>Luni - Vineri: 9:00 - 18:00</p>
+                                <p>Sâmbătă - Duminică: Închis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2 class="section-title">Unde ne găsești</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.964411693908!2d21.92171131559104!3d47.06284497914998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4746475a0e7a3a6d%3A0x3b4e4e8b4c5b1b1!2sOradea!5e0!3m2!1sen!2sro!4v1620000000000!5m2!1sen!2sro" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="futuristic-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo-container">
+                        <img src="assets/logo.png" alt="MedNet AI Logo" class="footer-logo">
+                    </div>
+                    <p>Solutii avansate de AI și web development pentru clinici medicale.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Link-uri Rapide</h4>
+                    <ul>
+                        <li><a href="index.html">Acasă</a></li>
+                        <li><a href="webdev.html">Web Development</a></li>
+                        <li><a href="demo.html">Demo Chatbot</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><svg viewBox="0 0 24 24" class="footer-icon"><path fill="currentColor" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/></svg> Strada AI nr. 10, Oradea</li>
+                        <li><svg viewBox="0 0 24 24" class="footer-icon"><path fill="currentColor" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/></svg> +40 721 123 456</li>
+                        <li><svg viewBox="0 0 24 24" class="footer-icon"><path fill="currentColor" d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"/></svg> contact@mednetai.ro</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MedNet AI. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulate form submission
+            const form = e.target;
+            const successMessage = document.getElementById('successMessage');
+            
+            // Hide form and show success message
+            form.style.display = 'none';
+            successMessage.style.display = 'block';
+            
+            // Reset form after 5 seconds
+            setTimeout(() => {
+                form.reset();
+                form.style.display = 'block';
+                successMessage.style.display = 'none';
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
